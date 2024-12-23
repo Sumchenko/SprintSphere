@@ -29,7 +29,7 @@ public class DataProviderXml implements IDataProvider {
     @Override
     public void saveRecord(HistoryContent record) throws Exception {
         try {
-            if (record.getObject() == null) {
+            if (record.getObject() == null) {  // как обрабатывать null
                 record.setObject(new HashMap<>()); // Инициализация пустой карты
             }
             persister.write(record, new File(FILE_NAME));

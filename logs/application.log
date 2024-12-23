@@ -303,3 +303,967 @@
 12.23 17.23.08  INFO main ru.sfedu.sprintspherepk.api.FileHandler - Начало теста: checkInvalidFileName
 12.23 17.23.08  INFO main ru.sfedu.sprintspherepk.api.FileHandler - Попытка загрузить файл: src/test/resources/invalidFile.txt
 12.23 17.23.08  INFO main ru.sfedu.sprintspherepk.api.FileHandler - Исключение MyException успешно перехвачено
+12.23 17.48.48  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 17.48.48  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 17.48.48  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 7ede215b-985e-49cf-8ee0-aa43c4e6a140
+12.23 17.48.48 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при добавлении HistoryContent с ID: 7ede215b-985e-49cf-8ee0-aa43c4e6a140
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.createHistoryContent(DatabaseHandler.java:38)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testCreateHistoryContent(DatabaseHandlerTest.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.48.48  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 7ede215b-985e-49cf-8ee0-aa43c4e6a140
+12.23 17.48.48  WARN main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Не найдено HistoryContent с ID: 7ede215b-985e-49cf-8ee0-aa43c4e6a140
+12.23 17.48.48  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 17.48.49  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 17.48.49  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 6e4c166b-f8e9-40f7-9572-31688d8e506a
+12.23 17.48.49 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при добавлении HistoryContent с ID: 6e4c166b-f8e9-40f7-9572-31688d8e506a
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.createHistoryContent(DatabaseHandler.java:38)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testDeleteHistoryContent(DatabaseHandlerTest.java:60)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.48.49  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на удаление HistoryContent с ID: 6e4c166b-f8e9-40f7-9572-31688d8e506a
+12.23 17.48.49  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent удален. Затронуто строк: 0
+12.23 17.48.49  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 6e4c166b-f8e9-40f7-9572-31688d8e506a
+12.23 17.48.49  WARN main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Не найдено HistoryContent с ID: 6e4c166b-f8e9-40f7-9572-31688d8e506a
+12.23 17.48.49  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 17.48.49  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 17.48.49  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 705c9e8c-2130-4694-bab0-e72bae38c1dc
+12.23 17.48.49 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при добавлении HistoryContent с ID: 705c9e8c-2130-4694-bab0-e72bae38c1dc
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.createHistoryContent(DatabaseHandler.java:38)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testUpdateHistoryContent(DatabaseHandlerTest.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.48.49  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на обновление HistoryContent с ID: 705c9e8c-2130-4694-bab0-e72bae38c1dc
+12.23 17.48.49 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при обновлении HistoryContent с ID: 705c9e8c-2130-4694-bab0-e72bae38c1dc
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.updateHistoryContent(DatabaseHandler.java:89)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testUpdateHistoryContent(DatabaseHandlerTest.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.48.49  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 705c9e8c-2130-4694-bab0-e72bae38c1dc
+12.23 17.48.49  WARN main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Не найдено HistoryContent с ID: 705c9e8c-2130-4694-bab0-e72bae38c1dc
+12.23 17.50.36  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 17.50.36  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 17.50.36  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 0ddff0d5-7305-472d-836a-e99e5c17a7cb
+12.23 17.50.36 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при добавлении HistoryContent с ID: 0ddff0d5-7305-472d-836a-e99e5c17a7cb
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.createHistoryContent(DatabaseHandler.java:38)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testCreateHistoryContent(DatabaseHandlerTest.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.50.36  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 0ddff0d5-7305-472d-836a-e99e5c17a7cb
+12.23 17.50.36  WARN main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Не найдено HistoryContent с ID: 0ddff0d5-7305-472d-836a-e99e5c17a7cb
+12.23 17.50.36  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 17.50.36  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 17.50.36  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 393db4fe-1da0-4b99-9c38-f999385b5d7e
+12.23 17.50.36 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при добавлении HistoryContent с ID: 393db4fe-1da0-4b99-9c38-f999385b5d7e
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.createHistoryContent(DatabaseHandler.java:38)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testDeleteHistoryContent(DatabaseHandlerTest.java:60)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.50.36  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на удаление HistoryContent с ID: 393db4fe-1da0-4b99-9c38-f999385b5d7e
+12.23 17.50.36  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent удален. Затронуто строк: 0
+12.23 17.50.36  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 393db4fe-1da0-4b99-9c38-f999385b5d7e
+12.23 17.50.36  WARN main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Не найдено HistoryContent с ID: 393db4fe-1da0-4b99-9c38-f999385b5d7e
+12.23 17.50.36  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 17.50.36  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 17.50.36  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 91be6a74-ec9a-4eeb-a9c6-c04241371a06
+12.23 17.50.36 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при добавлении HistoryContent с ID: 91be6a74-ec9a-4eeb-a9c6-c04241371a06
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.createHistoryContent(DatabaseHandler.java:38)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testUpdateHistoryContent(DatabaseHandlerTest.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.50.36  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на обновление HistoryContent с ID: 91be6a74-ec9a-4eeb-a9c6-c04241371a06
+12.23 17.50.36 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при обновлении HistoryContent с ID: 91be6a74-ec9a-4eeb-a9c6-c04241371a06
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.updateHistoryContent(DatabaseHandler.java:89)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testUpdateHistoryContent(DatabaseHandlerTest.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.50.36  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 91be6a74-ec9a-4eeb-a9c6-c04241371a06
+12.23 17.50.36  WARN main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Не найдено HistoryContent с ID: 91be6a74-ec9a-4eeb-a9c6-c04241371a06
+12.23 17.51.14  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 17.51.14  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 17.51.14  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 999b8b53-211e-40c6-80e8-60d50573d220
+12.23 17.51.14 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при добавлении HistoryContent с ID: 999b8b53-211e-40c6-80e8-60d50573d220
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.createHistoryContent(DatabaseHandler.java:38)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testCreateHistoryContent(DatabaseHandlerTest.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.51.14  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 999b8b53-211e-40c6-80e8-60d50573d220
+12.23 17.51.14 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при получении HistoryContent с ID: 999b8b53-211e-40c6-80e8-60d50573d220
+org.postgresql.util.PSQLException: ОШИБКА: отношение "history_content" не существует
+  Позиция: 15
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.getHistoryContentById(DatabaseHandler.java:56)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testCreateHistoryContent(DatabaseHandlerTest.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.51.14  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 17.51.14  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 17.51.14  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 8eba0936-eb8f-450c-adb5-f44cfd1a56d6
+12.23 17.51.14 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при добавлении HistoryContent с ID: 8eba0936-eb8f-450c-adb5-f44cfd1a56d6
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.createHistoryContent(DatabaseHandler.java:38)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testDeleteHistoryContent(DatabaseHandlerTest.java:60)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.51.14  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на удаление HistoryContent с ID: 8eba0936-eb8f-450c-adb5-f44cfd1a56d6
+12.23 17.51.14 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при удалении HistoryContent с ID: 8eba0936-eb8f-450c-adb5-f44cfd1a56d6
+org.postgresql.util.PSQLException: ОШИБКА: отношение "history_content" не существует
+  Позиция: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.deleteHistoryContent(DatabaseHandler.java:107)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testDeleteHistoryContent(DatabaseHandlerTest.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.51.14  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 8eba0936-eb8f-450c-adb5-f44cfd1a56d6
+12.23 17.51.14 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при получении HistoryContent с ID: 8eba0936-eb8f-450c-adb5-f44cfd1a56d6
+org.postgresql.util.PSQLException: ОШИБКА: отношение "history_content" не существует
+  Позиция: 15
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.getHistoryContentById(DatabaseHandler.java:56)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testDeleteHistoryContent(DatabaseHandlerTest.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.51.14  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 17.51.14  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 17.51.14  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: ec0c328f-b5fa-4f2d-9e42-398fc0938e96
+12.23 17.51.14 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при добавлении HistoryContent с ID: ec0c328f-b5fa-4f2d-9e42-398fc0938e96
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.createHistoryContent(DatabaseHandler.java:38)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testUpdateHistoryContent(DatabaseHandlerTest.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.51.14  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на обновление HistoryContent с ID: ec0c328f-b5fa-4f2d-9e42-398fc0938e96
+12.23 17.51.14 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при обновлении HistoryContent с ID: ec0c328f-b5fa-4f2d-9e42-398fc0938e96
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.updateHistoryContent(DatabaseHandler.java:89)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testUpdateHistoryContent(DatabaseHandlerTest.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.51.14  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: ec0c328f-b5fa-4f2d-9e42-398fc0938e96
+12.23 17.51.14 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при получении HistoryContent с ID: ec0c328f-b5fa-4f2d-9e42-398fc0938e96
+org.postgresql.util.PSQLException: ОШИБКА: отношение "history_content" не существует
+  Позиция: 15
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.getHistoryContentById(DatabaseHandler.java:56)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testUpdateHistoryContent(DatabaseHandlerTest.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.54.54  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 17.54.54  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 17.54.54  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 494460b2-f5b2-4d98-a51e-caa9290cf1ce
+12.23 17.54.54 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при добавлении HistoryContent с ID: 494460b2-f5b2-4d98-a51e-caa9290cf1ce
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.createHistoryContent(DatabaseHandler.java:38)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testCreateHistoryContent(DatabaseHandlerTest.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.54.54  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 494460b2-f5b2-4d98-a51e-caa9290cf1ce
+12.23 17.54.54  WARN main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Не найдено HistoryContent с ID: 494460b2-f5b2-4d98-a51e-caa9290cf1ce
+12.23 17.54.54  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 17.54.54  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 17.54.54  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: dffe334e-6e86-40b2-a97b-ac53bf170f6c
+12.23 17.54.54 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при добавлении HistoryContent с ID: dffe334e-6e86-40b2-a97b-ac53bf170f6c
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.createHistoryContent(DatabaseHandler.java:38)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testDeleteHistoryContent(DatabaseHandlerTest.java:60)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.54.54  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на удаление HistoryContent с ID: dffe334e-6e86-40b2-a97b-ac53bf170f6c
+12.23 17.54.54  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent удален. Затронуто строк: 0
+12.23 17.54.54  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: dffe334e-6e86-40b2-a97b-ac53bf170f6c
+12.23 17.54.54  WARN main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Не найдено HistoryContent с ID: dffe334e-6e86-40b2-a97b-ac53bf170f6c
+12.23 17.54.54  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 17.54.54  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 17.54.54  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 7246b02b-2cdc-4877-b568-d44a474a6c0d
+12.23 17.54.54 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при добавлении HistoryContent с ID: 7246b02b-2cdc-4877-b568-d44a474a6c0d
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.createHistoryContent(DatabaseHandler.java:38)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testUpdateHistoryContent(DatabaseHandlerTest.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.54.54  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на обновление HistoryContent с ID: 7246b02b-2cdc-4877-b568-d44a474a6c0d
+12.23 17.54.54 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при обновлении HistoryContent с ID: 7246b02b-2cdc-4877-b568-d44a474a6c0d
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.updateHistoryContent(DatabaseHandler.java:89)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testUpdateHistoryContent(DatabaseHandlerTest.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 17.54.54  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 7246b02b-2cdc-4877-b568-d44a474a6c0d
+12.23 17.54.54  WARN main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Не найдено HistoryContent с ID: 7246b02b-2cdc-4877-b568-d44a474a6c0d
+12.23 18.17.14  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 18.17.15  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 18.17.15  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: e329b703-ff61-4e9e-8d98-d0db21d5e3a8
+12.23 18.17.15 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при добавлении HistoryContent с ID: e329b703-ff61-4e9e-8d98-d0db21d5e3a8
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.createHistoryContent(DatabaseHandler.java:38)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testCreateHistoryContent(DatabaseHandlerTest.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 18.17.15  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: e329b703-ff61-4e9e-8d98-d0db21d5e3a8
+12.23 18.17.15  WARN main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Не найдено HistoryContent с ID: e329b703-ff61-4e9e-8d98-d0db21d5e3a8
+12.23 18.17.15  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 18.17.15  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 18.17.15  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 43108db1-9c0a-44b8-b45d-273b365d12fb
+12.23 18.17.15 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при добавлении HistoryContent с ID: 43108db1-9c0a-44b8-b45d-273b365d12fb
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.createHistoryContent(DatabaseHandler.java:38)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testDeleteHistoryContent(DatabaseHandlerTest.java:60)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 18.17.15  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на удаление HistoryContent с ID: 43108db1-9c0a-44b8-b45d-273b365d12fb
+12.23 18.17.15  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent удален. Затронуто строк: 0
+12.23 18.17.15  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 43108db1-9c0a-44b8-b45d-273b365d12fb
+12.23 18.17.15  WARN main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Не найдено HistoryContent с ID: 43108db1-9c0a-44b8-b45d-273b365d12fb
+12.23 18.17.15  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 18.17.15  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 18.17.15  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 92d7c02d-6e08-49d2-b627-1d94d90550dc
+12.23 18.17.15 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при добавлении HistoryContent с ID: 92d7c02d-6e08-49d2-b627-1d94d90550dc
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.createHistoryContent(DatabaseHandler.java:38)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testUpdateHistoryContent(DatabaseHandlerTest.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 18.17.15  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на обновление HistoryContent с ID: 92d7c02d-6e08-49d2-b627-1d94d90550dc
+12.23 18.17.15 ERROR main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Ошибка при обновлении HistoryContent с ID: 92d7c02d-6e08-49d2-b627-1d94d90550dc
+org.postgresql.util.PSQLException: No hstore extension installed.
+	at org.postgresql.jdbc.PgPreparedStatement.setMap(PgPreparedStatement.java:536)
+	at org.postgresql.jdbc.PgPreparedStatement.setObject(PgPreparedStatement.java:1038)
+	at ru.sfedu.sprintspherepk.psql.DatabaseHandler.updateHistoryContent(DatabaseHandler.java:89)
+	at ru.sfedu.sprintspherepk.DatabaseHandlerTest.testUpdateHistoryContent(DatabaseHandlerTest.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+12.23 18.17.15  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 92d7c02d-6e08-49d2-b627-1d94d90550dc
+12.23 18.17.15  WARN main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Не найдено HistoryContent с ID: 92d7c02d-6e08-49d2-b627-1d94d90550dc
+12.23 18.17.46  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: df57a019-1488-47bd-84c9-c4f6601e68f3
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent добавлен. Затронуто строк: 1
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: df57a019-1488-47bd-84c9-c4f6601e68f3
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent успешно получен с ID: df57a019-1488-47bd-84c9-c4f6601e68f3
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 409f666f-663b-41ae-8193-0cfd557de602
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent добавлен. Затронуто строк: 1
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на удаление HistoryContent с ID: 409f666f-663b-41ae-8193-0cfd557de602
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent удален. Затронуто строк: 1
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 409f666f-663b-41ae-8193-0cfd557de602
+12.23 18.17.47  WARN main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Не найдено HistoryContent с ID: 409f666f-663b-41ae-8193-0cfd557de602
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 627df756-378c-469b-ab17-e858f21db2ca
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent добавлен. Затронуто строк: 1
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на обновление HistoryContent с ID: 627df756-378c-469b-ab17-e858f21db2ca
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent обновлен. Затронуто строк: 1
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 627df756-378c-469b-ab17-e858f21db2ca
+12.23 18.17.47  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent успешно получен с ID: 627df756-378c-469b-ab17-e858f21db2ca
+12.23 18.18.51  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 00e057ef-c797-4df1-b680-02b00c5eac59
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent добавлен. Затронуто строк: 1
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 00e057ef-c797-4df1-b680-02b00c5eac59
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent успешно получен с ID: 00e057ef-c797-4df1-b680-02b00c5eac59
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: a9268841-05ce-4ae1-89cb-8e2b06654cc6
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent добавлен. Затронуто строк: 1
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на удаление HistoryContent с ID: a9268841-05ce-4ae1-89cb-8e2b06654cc6
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent удален. Затронуто строк: 1
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: a9268841-05ce-4ae1-89cb-8e2b06654cc6
+12.23 18.18.52  WARN main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Не найдено HistoryContent с ID: a9268841-05ce-4ae1-89cb-8e2b06654cc6
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 610e15b6-7869-475a-b3be-2d96eb2728b0
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent добавлен. Затронуто строк: 1
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на обновление HistoryContent с ID: 610e15b6-7869-475a-b3be-2d96eb2728b0
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent обновлен. Затронуто строк: 1
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 610e15b6-7869-475a-b3be-2d96eb2728b0
+12.23 18.18.52  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent успешно получен с ID: 610e15b6-7869-475a-b3be-2d96eb2728b0
+12.23 18.19.10  INFO main ru.sfedu.sprintspherepk.DataProviderCsvTest - Инициализация поставщика данных для CSV...
+12.23 18.19.10  INFO main ru.sfedu.sprintspherepk.DataProviderCsvTest - Инициализация источника данных для CSV поставщика...
+12.23 18.19.10  INFO main ru.sfedu.sprintspherepk.DataProviderCsvTest - Источник данных для CSV инициализирован.
+12.23 18.19.10  INFO main ru.sfedu.sprintspherepk.DataProviderCsvTest - Начало тестирования CSV поставщика...
+12.23 18.19.10  INFO main ru.sfedu.sprintspherepk.DataProviderCsvTest - Сохранение записи в CSV...
+12.23 18.19.10  INFO main ru.sfedu.sprintspherepk.DataProviderCsvTest - Запись сохранена с ID: 0fa7cc8a-68e8-4aba-9eeb-6a022de8008a
+12.23 18.19.10  INFO main ru.sfedu.sprintspherepk.DataProviderCsvTest - Извлечение записи по ID из CSV...
+12.23 18.19.10  INFO main ru.sfedu.sprintspherepk.DataProviderCsvTest - Запись успешно извлечена.
+12.23 18.19.10  INFO main ru.sfedu.sprintspherepk.DataProviderCsvTest - Удаление записи из CSV...
+12.23 18.19.10  INFO main ru.sfedu.sprintspherepk.DataProviderCsvTest - Запись успешно удалена.
+12.23 18.19.22  INFO main ru.sfedu.sprintspherepk.DataProviderXmlTest - Инициализация поставщика данных для XML...
+12.23 18.19.22  INFO main ru.sfedu.sprintspherepk.DataProviderXmlTest - Инициализация источника данных для XML поставщика...
+12.23 18.19.22  INFO main ru.sfedu.sprintspherepk.DataProviderXmlTest - Источник данных для XML инициализирован.
+12.23 18.19.22  INFO main ru.sfedu.sprintspherepk.DataProviderXmlTest - Начало тестирования XML поставщика...
+12.23 18.19.22  INFO main ru.sfedu.sprintspherepk.DataProviderXmlTest - Сохранение записи в XML...
+12.23 18.19.22  INFO main ru.sfedu.sprintspherepk.DataProviderXmlTest - Запись сохранена с ID: 0b226930-f951-4750-9bd5-6d072b1bd8b8
+12.23 18.19.22  INFO main ru.sfedu.sprintspherepk.DataProviderXmlTest - Извлечение записи по ID из XML...
+12.23 18.19.22  INFO main ru.sfedu.sprintspherepk.DataProviderXmlTest - Запись успешно извлечена.
+12.23 18.19.22  INFO main ru.sfedu.sprintspherepk.DataProviderXmlTest - Удаление записи из XML...
+12.23 18.19.22  INFO main ru.sfedu.sprintspherepk.DataProviderXmlTest - Запись успешно удалена.
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 52159970-26cd-4a31-80b4-2715d625eec1
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent добавлен. Затронуто строк: 1
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 52159970-26cd-4a31-80b4-2715d625eec1
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent успешно получен с ID: 52159970-26cd-4a31-80b4-2715d625eec1
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 4bdcbff7-56a5-4cb2-af9d-098fa156d62e
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent добавлен. Затронуто строк: 1
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на удаление HistoryContent с ID: 4bdcbff7-56a5-4cb2-af9d-098fa156d62e
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent удален. Затронуто строк: 1
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 4bdcbff7-56a5-4cb2-af9d-098fa156d62e
+12.23 18.19.56  WARN main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Не найдено HistoryContent с ID: 4bdcbff7-56a5-4cb2-af9d-098fa156d62e
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Попытка подключения к базе данных...
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Подключение к базе данных успешно установлено.
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на добавление HistoryContent с ID: 9ffe6b48-753e-4fee-acab-72827c81381a
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent добавлен. Затронуто строк: 1
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос на обновление HistoryContent с ID: 9ffe6b48-753e-4fee-acab-72827c81381a
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent обновлен. Затронуто строк: 1
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - Выполняется запрос для получения HistoryContent с ID: 9ffe6b48-753e-4fee-acab-72827c81381a
+12.23 18.19.56  INFO main ru.sfedu.sprintspherepk.psql.DatabaseHandler - HistoryContent успешно получен с ID: 9ffe6b48-753e-4fee-acab-72827c81381a

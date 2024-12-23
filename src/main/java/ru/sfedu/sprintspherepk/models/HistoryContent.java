@@ -29,7 +29,7 @@ public class HistoryContent {
     private String methodName;
 
     @ElementMap(entry = "item", key = "key", attribute = true, inline = true, required = false)
-    private Map<String, String> object = new HashMap<>();
+    private Map<String, String> object;
 
     @Element
     private Status status;
