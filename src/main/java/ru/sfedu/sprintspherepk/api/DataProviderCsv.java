@@ -69,7 +69,7 @@ public class DataProviderCsv implements IDataProvider {
              CSVWriter writer = new CSVWriter(new FileWriter(tempFile))) {
 
             String[] line;
-            writer.writeNext(reader.readNext()); // Копируем заголовок
+            writer.writeNext(reader.readNext());
 
             while ((line = reader.readNext()) != null) {
                 if (!line[0].equals(id)) {
