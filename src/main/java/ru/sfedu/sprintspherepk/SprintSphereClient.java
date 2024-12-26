@@ -29,11 +29,11 @@ public class SprintSphereClient {
         log.info("Test INFO logging.");
     }
 
-    public static void main(String[] args) throws JsonProcessingException{
-        SprintSphereClient client = new SprintSphereClient();
-        client.logBasicSystemInfo();
-
-
-    }
+//    public static void main(String[] args) throws JsonProcessingException{
+//        SprintSphereClient client = new SprintSphereClient();
+//        client.logBasicSystemInfo();
+//
+//
+//    }
 
 }
