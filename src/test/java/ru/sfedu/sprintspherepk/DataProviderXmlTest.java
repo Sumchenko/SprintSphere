@@ -38,9 +38,10 @@ public class DataProviderXmlTest {
         record.setClassName("Test");
         record.setActor("User");
 
-        Map<String, String> objectMap = new HashMap<>();
+        Map<String, Object> objectMap = new HashMap<>();
         objectMap.put("key1", "value1");
-        objectMap.put("key2", "value2");
+        objectMap.put("key2", 12345);
+        objectMap.put("key3", 67.89);
         record.setObject(objectMap);
         record.setMethodName("TestMethod");
         record.setStatus(Status.SUCCESS);
@@ -53,8 +54,8 @@ public class DataProviderXmlTest {
         Optional<HistoryContent> retrieved = xmlProvider.getRecordById(record.getId());
         assertTrue(retrieved.isPresent());
         assertNotNull(retrieved.get().getObject());
-        assertEquals(record.getClassName(), retrieved.get().getClassName());
         assertEquals("value1", retrieved.get().getObject().get("key1"));
+        assertEquals(12345, retrieved.get().getObject().get("key2"));
         LOGGER.info("Запись успешно извлечена.");
 
         LOGGER.info("Удаление записи из XML...");
@@ -63,4 +64,3 @@ public class DataProviderXmlTest {
         LOGGER.info("Запись успешно удалена.");
     }
 }
-

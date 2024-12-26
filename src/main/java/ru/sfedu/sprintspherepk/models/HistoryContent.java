@@ -6,7 +6,6 @@ import org.simpleframework.xml.ElementMap;
 import org.simpleframework.xml.Root;
 
 import java.util.Date;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
@@ -28,8 +27,8 @@ public class HistoryContent {
     @Element
     private String methodName;
 
-    @ElementMap(entry = "item", key = "key", attribute = true, inline = true, required = false)
-    private Map<String, String> object;
+    @ElementMap(entry = "item", key = "key", value = "value", attribute = true, inline = true, required = false)
+    private Map<String, Object> object;
 
     @Element
     private Status status;
@@ -62,7 +61,7 @@ public class HistoryContent {
         return methodName;
     }
 
-    public Map<String, String> getObject() {
+    public Map<String, Object> getObject() {
         return object;
     }
 
@@ -94,7 +93,7 @@ public class HistoryContent {
         this.methodName = methodName;
     }
 
-    public void setObject(Map<String, String> object) {
+    public void setObject(Map<String, Object> object) {
         this.object = object;
     }
 
@@ -103,4 +102,3 @@ public class HistoryContent {
     }
 
 }
-

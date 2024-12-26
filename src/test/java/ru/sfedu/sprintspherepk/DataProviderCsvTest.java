@@ -40,11 +40,10 @@ public class DataProviderCsvTest {
         record.setMethodName("TestMethod");
         record.setStatus(Status.SUCCESS);
 
-        Map<String, String> objectData = new HashMap<>();
+        Map<String, Object> objectData = new HashMap<>();
         objectData.put("key1", "value1");
-        objectData.put("key2", "value2");
+        objectData.put("key2", 123);
         record.setObject(objectData);
-
 
         LOGGER.info("Сохранение записи в CSV...");
         csvProvider.saveRecord(record);
@@ -53,6 +52,10 @@ public class DataProviderCsvTest {
         LOGGER.info("Извлечение записи по ID из CSV...");
         Optional<HistoryContent> retrieved = csvProvider.getRecordById(record.getId());
         assertTrue(retrieved.isPresent());
+
+        LOGGER.info("Ожидаемый объект: " + record.getObject());
+        LOGGER.info("Извлечённый объект: " + retrieved.get().getObject());
+
         assertEquals(record.getClassName(), retrieved.get().getClassName());
         assertEquals(record.getObject(), retrieved.get().getObject());
         LOGGER.info("Запись успешно извлечена.");

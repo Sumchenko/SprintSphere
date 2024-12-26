@@ -1,5 +1,6 @@
 package ru.sfedu.sprintspherepk.psql;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import ru.sfedu.sprintspherepk.models.HistoryContent;
 import ru.sfedu.sprintspherepk.models.Status;
 
@@ -10,7 +11,8 @@ import org.apache.log4j.Logger;
 
 public class DatabaseHandler {
 
-    private static final Logger log = Logger.getLogger(DatabaseHandler.class); // Исправлено на правильный класс для логирования
+    private static final Logger log = Logger.getLogger(DatabaseHandler.class);
+    private static final ObjectMapper objectMapper = new ObjectMapper();
     private Connection connection;
 
     public DatabaseHandler(String dbUrl, String user, String password) {
@@ -33,7 +35,7 @@ public class DatabaseHandler {
             stmt.setTimestamp(3, new Timestamp(content.getCreatedDate().getTime()));
             stmt.setString(4, content.getActor());
             stmt.setString(5, content.getMethodName());
-            stmt.setObject(6, content.getObject());
+            stmt.setString(6, serializeObject(content.getObject()));
             stmt.setString(7, content.getStatus().name());
 
             int rowsAffected = stmt.executeUpdate();
@@ -59,7 +61,7 @@ public class DatabaseHandler {
                 content.setCreatedDate(rs.getTimestamp("created_date"));
                 content.setActor(rs.getString("actor"));
                 content.setMethodName(rs.getString("method_name"));
-                content.setObject((Map<String, String>) rs.getObject("object"));
+                content.setObject(deserializeObject(rs.getString("object")));
                 content.setStatus(Status.valueOf(rs.getString("status")));
 
                 log.info("HistoryContent успешно получен с ID: " + id);
@@ -82,7 +84,7 @@ public class DatabaseHandler {
             stmt.setTimestamp(2, new Timestamp(content.getCreatedDate().getTime()));
             stmt.setString(3, content.getActor());
             stmt.setString(4, content.getMethodName());
-            stmt.setObject(5, content.getObject());
+            stmt.setString(5, serializeObject(content.getObject()));
             stmt.setString(6, content.getStatus().name());
             stmt.setString(7, content.getId());
 
@@ -115,6 +117,26 @@ public class DatabaseHandler {
             }
         } catch (SQLException e) {
             log.error("Ошибка при закрытии подключения к базе данных: " + e.getMessage(), e);
+        }
+    }
+
+    // Метод для сериализации объекта Map в строку (например, JSON)
+    private String serializeObject(Map<String, Object> object) {
+        try {
+            return objectMapper.writeValueAsString(object);
+        } catch (Exception e) {
+            log.error("Ошибка при сериализации объекта: " + e.getMessage(), e);
+            return null;
+        }
+    }
+
+    // Метод для десериализации строки в объект Map
+    private Map<String, Object> deserializeObject(String objectStr) {
+        try {
+            return objectMapper.readValue(objectStr, Map.class);
+        } catch (Exception e) {
+            log.error("Ошибка при десериализации объекта: " + e.getMessage(), e);
+            return null;
         }
     }
 }

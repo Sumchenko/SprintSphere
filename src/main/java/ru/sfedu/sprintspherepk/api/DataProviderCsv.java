@@ -17,7 +17,6 @@ public class DataProviderCsv implements IDataProvider {
         File file = new File(FILE_NAME);
         if (!file.exists()) {
             try (CSVWriter writer = new CSVWriter(new FileWriter(FILE_NAME))) {
-                // Записываем заголовки файла
                 String[] header = {"id", "className", "createdDate", "actor", "methodName", "status", "object"};
                 writer.writeNext(header);
             } catch (IOException e) {
@@ -48,7 +47,7 @@ public class DataProviderCsv implements IDataProvider {
     public Optional<HistoryContent> getRecordById(String id) throws Exception {
         try (CSVReader reader = new CSVReader(new FileReader(FILE_NAME))) {
             String[] line;
-            reader.readNext(); // Пропускаем заголовок
+            reader.readNext();
             while ((line = reader.readNext()) != null) {
                 if (line[0].equals(id)) {
                     return Optional.of(parseRecord(line));
@@ -97,30 +96,32 @@ public class DataProviderCsv implements IDataProvider {
         return record;
     }
 
-    private String mapToString(Map<String, String> map) {
-        if (map == null || map.isEmpty()) {
-            return "";
-        }
+    private String mapToString(Map<String, Object> map) {
+        if (map == null || map.isEmpty()) return "";
         StringBuilder sb = new StringBuilder();
         map.forEach((key, value) -> sb.append(key).append("=").append(value).append(","));
-        sb.setLength(sb.length() - 1); // Убираем последний запятую
+        sb.setLength(sb.length() - 1);
         return sb.toString();
     }
 
-    private Map<String, String> stringToMap(String data) {
-        Map<String, String> map = new HashMap<>();
-        if (data == null || data.isEmpty()) {
-            return map;
-        }
+    private Map<String, Object> stringToMap(String data) {
+        Map<String, Object> map = new HashMap<>();
+        if (data == null || data.isEmpty()) return map;
         String[] entries = data.split(",");
         for (String entry : entries) {
             String[] keyValue = entry.split("=");
             if (keyValue.length == 2) {
-                map.put(keyValue[0], keyValue[1]);
+                map.put(keyValue[0], parseValue(keyValue[1]));
             }
         }
         return map;
     }
+
+    private Object parseValue(String value) {
+        try {
+            return Integer.parseInt(value);
+        } catch (NumberFormatException e) {
+            return value;
+        }
+    }
 }
-
-
