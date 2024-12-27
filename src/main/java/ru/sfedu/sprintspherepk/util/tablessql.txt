@@ -1,0 +1,44 @@
+-- Таблица для модели User
+CREATE TABLE users (
+        id SERIAL PRIMARY KEY,
+        name VARCHAR(255) NOT NULL,
+email VARCHAR(255) UNIQUE NOT NULL,
+bio TEXT,
+count_project INT NOT NULL DEFAULT 0,
+avatar_url TEXT,
+is_active BOOLEAN NOT NULL DEFAULT TRUE,
+last_login TIMESTAMP,
+date_joined TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+        -- Таблица для модели Project
+CREATE TABLE projects (
+        id SERIAL PRIMARY KEY,
+        name VARCHAR(255) NOT NULL,
+description TEXT
+);
+
+        -- Таблица для модели Sprint
+CREATE TABLE sprints (
+        id SERIAL PRIMARY KEY,
+        start_date DATE NOT NULL,
+        end_date DATE NOT NULL,
+        progress NUMERIC(5, 2) NOT NULL CHECK (progress >= 0 AND progress <= 100)
+        );
+
+        -- Таблица для модели Task
+CREATE TABLE tasks (
+        id SERIAL PRIMARY KEY,
+        title VARCHAR(255) NOT NULL,
+description TEXT,
+status VARCHAR(50) NOT NULL,
+priority INT NOT NULL CHECK (priority >= 1 AND priority <= 5)
+);
+
+        -- Таблица для модели Retrospective
+CREATE TABLE retrospectives (
+        id SERIAL PRIMARY KEY,
+        summary TEXT NOT NULL,
+        improvements TEXT,
+        positives TEXT
+);
